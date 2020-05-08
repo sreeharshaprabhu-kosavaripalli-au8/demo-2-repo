@@ -1,2 +1,134 @@
 Hi there
 hi there agaim i am back with sme new improvements
+
+<html>
+<head>
+<title> Signup Form </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+      <div id="log in-box">
+      <div class="left-box">
+      <h1> Sign Up</h1>
+      
+          
+          <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="email">Email id:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="retypepass">Retype password:</label><br>
+      <input type="password" id="password" name="password2"><br><br>     
+          
+          
+      <button onclick="myFunction1()">Submit</button>
+
+      <script>
+      function myFunction1()
+      {
+      alert("Left Form Submitted");
+      }
+      </script>
+
+          
+      </div>
+      <div id="log in-box">
+      <div class="right-box">
+          
+          
+        <form action="/action_page.php">
+     <label for="fname">First name:</label><br>
+     <input type="text" id="fname" name="fname"><br><br>
+     <label for="lname">Last name:</label><br>
+     <input type="text" id="lname" name="lname"><br><br>
+     <label for="dob">Date of birth:</label><br>
+     <input type="text" id="lname" name="lname"><br><br>
+     <label for="city">City:</label><br>
+     <input type="text" id="lname" name="lname"><br><br>
+     <label for="mblnum">Mobile number:</label><br>
+     <input type="text" id="mblnum" name="mblnum"><br><br>
+     <label for="gender">Gender:</label><br>
+     <input type="radio" id="male" name="gender" value="male">
+     <label for="male">Male</label><br>
+     <input type="radio" id="female" name="gender" value="female">
+     <label for="female">Female</label><br>
+     <input type="radio" id="other" name="gender" value="other">
+     <label for="other">Other</label><br><br>
+     <label for="emplstats">Employment status:</label><br>
+ 
+     <div class="Employment status">
+    <style>
+
+
+    .dropdown-content 
+{
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     overflow: auto;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+    .dropdown-content a 
+{
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    .show {display:block;}
+
+
+    </style>
+    </head>
+    <body>
+
+
+
+    <div class="Employment status">
+    <input type="text" id="emplystats" name="emplystats"><br>
+   
+  
+       <div id="myDropdown" class="dropdown-content">
+       <a href="#Seeking Employment">Seeking Employment</a>
+       <a href="#Full-time Employment">Full-time Employment</a>
+       <a href="#Self Employed">Self Employed</a>
+       <a href="#Part-time Employment">Part-time Employment</a>
+
+      
+      </div>
+      </div>
+      <script>
+      // Get the box, and when the user clicks on it, execute myFunction
+       document.getElementById("emplystats").onclick = function() {myFunction()};
+
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction() 
+{
+       document.getElementById("myDropdown").classList.toggle("show");
+}
+      </script><br>
+    
+    
+      <button onclick="myFunction2()">Submit</button>
+
+      <script>
+      function myFunction2()
+      {
+      alert("Right Form Submitted");
+      }
+      </script>
+        
+      </div>
+</body>
+</html>
+
